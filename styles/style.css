@@ -1,6 +1,6 @@
-h1 {
+.animated-header {
     position: relative;
-    font-size: 10vw;
+    font-size: 14vw;
     font-weight: 700;
     color: #0a0537;
     text-align: center;
@@ -8,7 +8,7 @@ h1 {
     text-transform: uppercase;
 }
 
-h1::before {
+.animated-header::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -26,7 +26,61 @@ h1::before {
     0% {
         width: 0;
     }
+
     70% {
         width: 100%;
     }
+}
+
+#page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    margin-top: 20px;
+}
+
+.skill-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s forwards;
+    transition: transform 1s ease;
+}
+
+.skill-item:nth-child(1) {
+    animation-delay: 200ms;
+}
+
+.skill-item:nth-child(2) {
+    animation-delay: 400ms;
+}
+
+.skill-item:nth-child(3) {
+    animation-delay: 600ms;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.hidden-section {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show-section {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
