@@ -4,7 +4,7 @@ const projects = [
         description: "A webapp to help students taking Dutch signlanguage practice and motivate them by offering trophies",
         image: "images/HandigNgt.png",
         languages: "PHP and Blade",
-        link: "handigNgt.html",
+        link: "./handigNgt.html",
     },
     {
         title: "Open Hiring",
