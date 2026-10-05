@@ -65,3 +65,11 @@ No sample report or fabricated internship pages are included. The exact appearan
 The real 38-page “The Developer’s Journey” report is now included. The book uses page previews in `images/journal/` to load one spread at a time, rather than downloading the entire original 92 MB report. `documents/stageverslag.pdf` is a lighter website copy; the uploaded original was left unchanged. Visitors can open this copy using the original-PDF link. The homepage now includes the real cover, and the “coming soon” state has been removed.
 
 The current image-backed book also works when opened directly, without a server. If you replace the report, regenerate the JPEG pages and update `data-page-count` in `offri.html`. To use a new PDF directly without generated previews, remove the `data-page-count` and `data-page-images` attributes; that fallback requires Live Server. PDF.js remains bundled for that fallback.
+
+## Supplied project evidence
+
+All 12 supplied screenshots are included in `images/closet/` and `images/slik/`, with safe filenames. The previously unnamed Expo screenshot is `images/closet/declutter-basket.jpg`. The project pages and homepage previews now use these real images. Select an image to open the full screenshot in a new tab; the gallery preserves the complete screen without cropping.
+
+The early Closet declutter screen and early session summary still display the doubt option. Their captions explicitly identify them as earlier iterations. The later basket is labelled separately. The outfit screen is described as a supporting feature, while the main case study remains focused on wardrobe overview and decluttering.
+
+Unfilled evidence slots for survey charts, interviews, sketches, review extracts and test screenshots have been removed. The written research and implementation context remains. The real internship journal book remains on the Offri page.
