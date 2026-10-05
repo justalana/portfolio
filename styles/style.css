@@ -2770,3 +2770,12 @@ body {
         font-size: 6px
     }
 }
+/* The overlay mask follows the portrait, including its rotation and scroll. */
+.paper-grain {
+  mask-repeat: no-repeat;
+  mask-position: 0 0;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: 0 0;
+  -webkit-mask-size: 100% 100%;
+}
